@@ -15,10 +15,10 @@ timer = pygame.event.custom_type()
 pygame.time.set_timer(timer, 250)
 running = True
 #Fonts
-font_150 = pygame.font.Font(r"C:\Users\Zero\Downloads\Osu RipOff - Copy\Osu RipOff - Copy\OtherHand.otf", 150)
-font_100 = pygame.font.Font(r"C:\Users\Zero\Downloads\Osu RipOff - Copy\Osu RipOff - Copy\OtherHand.otf", 100)
+font_150 = pygame.font.Font(r"OtherHand.otf", 150)
+font_100 = pygame.font.Font(r"OtherHand.otf", 100)
 #Cursor
-CursorRaw = pygame.image.load(r"C:\Users\Zero\Downloads\Osu RipOff - Copy\Osu RipOff - Copy\OsuRipoffIcon.png")
+CursorRaw = pygame.image.load(r"OsuRipoffIcon.png")
 Cursor = pygame.transform.scale(CursorRaw,(100,100))
 CursorCenter = Cursor.get_rect()
 pygame.mouse.set_visible(False)
@@ -126,6 +126,8 @@ PlayerTB = TextBox(screen, font_150, "", Red, 2, 2)
 PlayerData = Player(None, 0, None)
 
 #The button class can be used as general text output
+#     def __init__(self, screen, font, text, colour, x_div, y_div, action):
+
 NameHeader = Button(screen, font_150, "Enter your Name", Purple, 2, 4, None)
 Start_Button = Button(screen, font_100, "Start", Green, 2, 1.5, Start)
 Play_Button = Button(screen, font_100, "Play", Green, 2, 2, PrePreGame) #variables for the buttons
